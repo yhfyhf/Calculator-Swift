@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC66AC2E1D848C3100A361EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC66AC2D1D848C3100A361EF /* AppDelegate.swift */; };
+		EC66AC301D848C3100A361EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC66AC2F1D848C3100A361EF /* ViewController.swift */; };
+		EC66AC331D848C3100A361EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC66AC311D848C3100A361EF /* Main.storyboard */; };
+		EC66AC351D848C3100A361EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC66AC341D848C3100A361EF /* Assets.xcassets */; };
+		EC66AC381D848C3100A361EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC66AC361D848C3100A361EF /* LaunchScreen.storyboard */; };
+		EC66AC431D848C3100A361EF /* CalculatorIthacaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC66AC421D848C3100A361EF /* CalculatorIthacaTests.swift */; };
+		EC66AC4E1D848C3100A361EF /* CalculatorIthacaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC66AC4D1D848C3100A361EF /* CalculatorIthacaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC66AC3F1D848C3100A361EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC66AC221D848C3100A361EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC66AC291D848C3100A361EF;
+			remoteInfo = CalculatorIthaca;
+		};
+		EC66AC4A1D848C3100A361EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC66AC221D848C3100A361EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC66AC291D848C3100A361EF;
+			remoteInfo = CalculatorIthaca;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC66AC2A1D848C3100A361EF /* CalculatorIthaca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorIthaca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC66AC2D1D848C3100A361EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC66AC2F1D848C3100A361EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC66AC321D848C3100A361EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC66AC341D848C3100A361EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC66AC371D848C3100A361EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC66AC391D848C3100A361EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC66AC3E1D848C3100A361EF /* CalculatorIthacaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorIthacaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC66AC421D848C3100A361EF /* CalculatorIthacaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorIthacaTests.swift; sourceTree = "<group>"; };
+		EC66AC441D848C3100A361EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC66AC491D848C3100A361EF /* CalculatorIthacaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorIthacaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC66AC4D1D848C3100A361EF /* CalculatorIthacaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorIthacaUITests.swift; sourceTree = "<group>"; };
+		EC66AC4F1D848C3100A361EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC66AC271D848C3100A361EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC66AC3B1D848C3100A361EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC66AC461D848C3100A361EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC66AC211D848C3100A361EF = {
+			isa = PBXGroup;
+			children = (
+				EC66AC2C1D848C3100A361EF /* CalculatorIthaca */,
+				EC66AC411D848C3100A361EF /* CalculatorIthacaTests */,
+				EC66AC4C1D848C3100A361EF /* CalculatorIthacaUITests */,
+				EC66AC2B1D848C3100A361EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC66AC2B1D848C3100A361EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC66AC2A1D848C3100A361EF /* CalculatorIthaca.app */,
+				EC66AC3E1D848C3100A361EF /* CalculatorIthacaTests.xctest */,
+				EC66AC491D848C3100A361EF /* CalculatorIthacaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC66AC2C1D848C3100A361EF /* CalculatorIthaca */ = {
+			isa = PBXGroup;
+			children = (
+				EC66AC2D1D848C3100A361EF /* AppDelegate.swift */,
+				EC66AC2F1D848C3100A361EF /* ViewController.swift */,
+				EC66AC311D848C3100A361EF /* Main.storyboard */,
+				EC66AC341D848C3100A361EF /* Assets.xcassets */,
+				EC66AC361D848C3100A361EF /* LaunchScreen.storyboard */,
+				EC66AC391D848C3100A361EF /* Info.plist */,
+			);
+			path = CalculatorIthaca;
+			sourceTree = "<group>";
+		};
+		EC66AC411D848C3100A361EF /* CalculatorIthacaTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC66AC421D848C3100A361EF /* CalculatorIthacaTests.swift */,
+				EC66AC441D848C3100A361EF /* Info.plist */,
+			);
+			path = CalculatorIthacaTests;
+			sourceTree = "<group>";
+		};
+		EC66AC4C1D848C3100A361EF /* CalculatorIthacaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC66AC4D1D848C3100A361EF /* CalculatorIthacaUITests.swift */,
+				EC66AC4F1D848C3100A361EF /* Info.plist */,
+			);
+			path = CalculatorIthacaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC66AC291D848C3100A361EF /* CalculatorIthaca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC66AC521D848C3100A361EF /* Build configuration list for PBXNativeTarget "CalculatorIthaca" */;
+			buildPhases = (
+				EC66AC261D848C3100A361EF /* Sources */,
+				EC66AC271D848C3100A361EF /* Frameworks */,
+				EC66AC281D848C3100A361EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalculatorIthaca;
+			productName = CalculatorIthaca;
+			productReference = EC66AC2A1D848C3100A361EF /* CalculatorIthaca.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC66AC3D1D848C3100A361EF /* CalculatorIthacaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC66AC551D848C3100A361EF /* Build configuration list for PBXNativeTarget "CalculatorIthacaTests" */;
+			buildPhases = (
+				EC66AC3A1D848C3100A361EF /* Sources */,
+				EC66AC3B1D848C3100A361EF /* Frameworks */,
+				EC66AC3C1D848C3100A361EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC66AC401D848C3100A361EF /* PBXTargetDependency */,
+			);
+			name = CalculatorIthacaTests;
+			productName = CalculatorIthacaTests;
+			productReference = EC66AC3E1D848C3100A361EF /* CalculatorIthacaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC66AC481D848C3100A361EF /* CalculatorIthacaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC66AC581D848C3100A361EF /* Build configuration list for PBXNativeTarget "CalculatorIthacaUITests" */;
+			buildPhases = (
+				EC66AC451D848C3100A361EF /* Sources */,
+				EC66AC461D848C3100A361EF /* Frameworks */,
+				EC66AC471D848C3100A361EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC66AC4B1D848C3100A361EF /* PBXTargetDependency */,
+			);
+			name = CalculatorIthacaUITests;
+			productName = CalculatorIthacaUITests;
+			productReference = EC66AC491D848C3100A361EF /* CalculatorIthacaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC66AC221D848C3100A361EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Haofei Ying";
+				TargetAttributes = {
+					EC66AC291D848C3100A361EF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					EC66AC3D1D848C3100A361EF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EC66AC291D848C3100A361EF;
+					};
+					EC66AC481D848C3100A361EF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EC66AC291D848C3100A361EF;
+					};
+				};
+			};
+			buildConfigurationList = EC66AC251D848C3100A361EF /* Build configuration list for PBXProject "CalculatorIthaca" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC66AC211D848C3100A361EF;
+			productRefGroup = EC66AC2B1D848C3100A361EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC66AC291D848C3100A361EF /* CalculatorIthaca */,
+				EC66AC3D1D848C3100A361EF /* CalculatorIthacaTests */,
+				EC66AC481D848C3100A361EF /* CalculatorIthacaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC66AC281D848C3100A361EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC66AC381D848C3100A361EF /* LaunchScreen.storyboard in Resources */,
+				EC66AC351D848C3100A361EF /* Assets.xcassets in Resources */,
+				EC66AC331D848C3100A361EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC66AC3C1D848C3100A361EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC66AC471D848C3100A361EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC66AC261D848C3100A361EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC66AC301D848C3100A361EF /* ViewController.swift in Sources */,
+				EC66AC2E1D848C3100A361EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC66AC3A1D848C3100A361EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC66AC431D848C3100A361EF /* CalculatorIthacaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC66AC451D848C3100A361EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC66AC4E1D848C3100A361EF /* CalculatorIthacaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC66AC401D848C3100A361EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC66AC291D848C3100A361EF /* CalculatorIthaca */;
+			targetProxy = EC66AC3F1D848C3100A361EF /* PBXContainerItemProxy */;
+		};
+		EC66AC4B1D848C3100A361EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC66AC291D848C3100A361EF /* CalculatorIthaca */;
+			targetProxy = EC66AC4A1D848C3100A361EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC66AC311D848C3100A361EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC66AC321D848C3100A361EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC66AC361D848C3100A361EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC66AC371D848C3100A361EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC66AC501D848C3100A361EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC66AC511D848C3100A361EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC66AC531D848C3100A361EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CalculatorIthaca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = haofei.CalculatorIthaca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC66AC541D848C3100A361EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CalculatorIthaca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = haofei.CalculatorIthaca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC66AC561D848C3100A361EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CalculatorIthacaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = haofei.CalculatorIthacaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalculatorIthaca.app/CalculatorIthaca";
+			};
+			name = Debug;
+		};
+		EC66AC571D848C3100A361EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CalculatorIthacaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = haofei.CalculatorIthacaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalculatorIthaca.app/CalculatorIthaca";
+			};
+			name = Release;
+		};
+		EC66AC591D848C3100A361EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CalculatorIthacaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = haofei.CalculatorIthacaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CalculatorIthaca;
+			};
+			name = Debug;
+		};
+		EC66AC5A1D848C3100A361EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CalculatorIthacaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = haofei.CalculatorIthacaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CalculatorIthaca;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC66AC251D848C3100A361EF /* Build configuration list for PBXProject "CalculatorIthaca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC66AC501D848C3100A361EF /* Debug */,
+				EC66AC511D848C3100A361EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC66AC521D848C3100A361EF /* Build configuration list for PBXNativeTarget "CalculatorIthaca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC66AC531D848C3100A361EF /* Debug */,
+				EC66AC541D848C3100A361EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC66AC551D848C3100A361EF /* Build configuration list for PBXNativeTarget "CalculatorIthacaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC66AC561D848C3100A361EF /* Debug */,
+				EC66AC571D848C3100A361EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC66AC581D848C3100A361EF /* Build configuration list for PBXNativeTarget "CalculatorIthacaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC66AC591D848C3100A361EF /* Debug */,
+				EC66AC5A1D848C3100A361EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC66AC221D848C3100A361EF /* Project object */;
+}
