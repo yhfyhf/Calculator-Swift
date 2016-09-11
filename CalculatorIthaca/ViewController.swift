@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var curValue: Float = 0
     var curOperator: String = ""
     var operatorJustPressed: Bool = true
+    var lastNum: Float = 0.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +35,10 @@ class ViewController: UIViewController {
             numberDisplayLabel.text = ""
         }
         if (keyValue == "." && numberDisplayLabel.text!.rangeOfString(".") != nil) {
+        } else if (numberDisplayLabel!.text! == "0" && keyValue != ".") {
+            numberDisplayLabel!.text! = keyValue
         } else {
-            numberDisplayLabel.text! += keyValue
+            numberDisplayLabel!.text! += keyValue
         }
         
         operatorJustPressed = false
@@ -54,29 +57,50 @@ class ViewController: UIViewController {
         case "=":
             curValue = getCalculationResult(curValue, num2: numberDisplayValue, opr: curOperator)
             displayCurValue()
-            curOperator = ""   // press "=" continuesly
+            curOperator = ""   // press "=" continuously
+            operatorJustPressed = true
         case "+/-":
-            curValue = -curValue
-            displayCurValue()
+            numberDisplayLabel!.text! = floatToStr(-numberDisplayValue)
             curOperator = ""
+            operatorJustPressed = false
         default:
-            if operatorJustPressed {
-                displayCurValue()
+            if operatorJustPressed && curOperator != sender.titleLabel!.text! {
             } else {
-                curValue = getCalculationResult(curValue, num2: numberDisplayValue, opr: curOperator)
-                displayCurValue()
+                if operatorJustPressed && curOperator == sender.titleLabel!.text! {
+                    curValue = getCalculationResult(curValue, num2: lastNum, opr: curOperator)
+                } else {
+                    curValue = getCalculationResult(curValue, num2: numberDisplayValue, opr: curOperator)
+                }
             }
             curOperator = sender.titleLabel!.text!
+            operatorJustPressed = true
         }
         
-        operatorJustPressed = true
+        lastNum = numberDisplayValue
     }
     
     func strToFloat(str: String) -> Float {
         return Float(str)!
     }
     
+    func floatToStr(num: Float) -> String {
+        if num == 0.0 {
+            return "0"
+        } else {
+            var s = String(num)
+            if s.hasSuffix(".0") {
+                let index = s.endIndex.advancedBy(-2)
+                s = s.substringToIndex(index)
+            }
+            return s
+        }
+    }
+    
     func displayCurValue() {
+        if curValue == 0.0 {
+            numberDisplayLabel.text! = "0"
+            return
+        }
         let s = String(curValue)
         if s.hasSuffix(".0") {
             let index = s.endIndex.advancedBy(-2)
