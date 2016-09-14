@@ -12,10 +12,14 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var numberDisplayLabel: UILabel!
     
-    var curValue: Float = 0
+    var stack = Stack<Float>()
     var curOperator: String = ""
     var operatorJustPressed: Bool = true
     var lastNum: Float = 0.0
+    var equalButtonJustPressed: Bool = true
+    var lastSender: UIButton?
+    var lastSenderTextColor: UIColor?
+    var lastSenderBackgroundColor: UIColor?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +31,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func numpadButtonPressed(sender: UIButton) {
+        setTextAndBackgroundColor(sender)
         let keyValue = sender.titleLabel!.text!
         
         if operatorJustPressed {
@@ -42,48 +47,69 @@ class ViewController: UIViewController {
         }
         
         operatorJustPressed = false
+        equalButtonJustPressed = false
     }
     
     @IBAction func clearButtonPressed(sender: UIButton) {
-        numberDisplayLabel.text = "0"
-        curValue = 0
+        setTextAndBackgroundColor(sender)
+        self.stack.clear()
+        lastNum = 0.0
         curOperator = ""
+        operatorJustPressed = true
+        equalButtonJustPressed = true
+        displayResult()
     }
     
     @IBAction func operatorButtonPressed(sender: UIButton) {
+        setTextAndBackgroundColor(sender)
         let numberDisplayValue = strToFloat(numberDisplayLabel!.text!)
-    
-        switch sender.titleLabel!.text! {
+        let opr = sender.titleLabel!.text!
+        
+        switch opr {
         case "=":
-            curValue = getCalculationResult(curValue, num2: numberDisplayValue, opr: curOperator)
-            displayCurValue()
-            curOperator = ""   // press "=" continuously
-            operatorJustPressed = true
-        case "+/-":
-            numberDisplayLabel!.text! = floatToStr(-numberDisplayValue)
-            curOperator = ""
-            operatorJustPressed = false
-        default:
-            if operatorJustPressed && curOperator != sender.titleLabel!.text! {
+            var res: Float
+            if stack.isEmpty() {
+                res = numberDisplayValue
             } else {
-                if operatorJustPressed && curOperator == sender.titleLabel!.text! {
-                    curValue = getCalculationResult(curValue, num2: lastNum, opr: curOperator)
+                if equalButtonJustPressed {
+                    res = getCalculationResult(stack.pop(), num2: lastNum, opr: curOperator)
                 } else {
-                    curValue = getCalculationResult(curValue, num2: numberDisplayValue, opr: curOperator)
+                    res = getCalculationResult(stack.pop(), num2: numberDisplayValue, opr: curOperator)
+                    lastNum = numberDisplayValue
                 }
             }
-            curOperator = sender.titleLabel!.text!
-            operatorJustPressed = true
+            stack.push(res)
+            displayResult()
+            equalButtonJustPressed = true
+        case "+/-":
+            stack.push(-numberDisplayValue)
+            displayResult()
+            curOperator = opr
+            lastNum = numberDisplayValue
+            equalButtonJustPressed = false
+        default:
+            if curOperator != "" && !equalButtonJustPressed {
+                let res = getCalculationResult(stack.pop(), num2: numberDisplayValue, opr: curOperator)
+                stack.push(res)
+            } else {
+                stack.push(numberDisplayValue)
+            }
+            curOperator = opr
+            lastNum = numberDisplayValue
+            equalButtonJustPressed = false
         }
-        
-        lastNum = numberDisplayValue
+        operatorJustPressed = true
     }
     
-    func strToFloat(str: String) -> Float {
+    private func isOperator(str: String) -> Bool {
+        return ["+", "-", "x", "÷", "+/-", "="].contains(str)
+    }
+    
+    private func strToFloat(str: String) -> Float {
         return Float(str)!
     }
     
-    func floatToStr(num: Float) -> String {
+    private func floatToStr(num: Float) -> String {
         if num == 0.0 {
             return "0"
         } else {
@@ -96,21 +122,15 @@ class ViewController: UIViewController {
         }
     }
     
-    func displayCurValue() {
-        if curValue == 0.0 {
+    private func displayResult() {
+        if self.stack.isEmpty() {
             numberDisplayLabel.text! = "0"
-            return
-        }
-        let s = String(curValue)
-        if s.hasSuffix(".0") {
-            let index = s.endIndex.advancedBy(-2)
-            numberDisplayLabel.text! = s.substringToIndex(index)
         } else {
-            numberDisplayLabel.text! = s
+            numberDisplayLabel.text! = floatToStr(stack.peek())
         }
     }
     
-    func getCalculationResult(num1: Float, num2: Float, opr: String) -> Float {
+    private func getCalculationResult(num1: Float, num2: Float, opr: String) -> Float {
         switch opr {
         case "+":
             return num1 + num2
@@ -127,5 +147,17 @@ class ViewController: UIViewController {
         }
     }
     
+    private func setTextAndBackgroundColor(sender: UIButton) {
+        if lastSender != nil {
+            lastSender!.titleLabel?.textColor = lastSenderTextColor
+            lastSender!.backgroundColor = lastSenderBackgroundColor
+        }
+        lastSender = sender;
+        lastSenderTextColor = sender.titleLabel!.textColor!
+        lastSenderBackgroundColor = sender.backgroundColor!
+        sender.showsTouchWhenHighlighted = true
+        sender.titleLabel?.textColor = UIColor.whiteColor()
+        sender.backgroundColor = UIColor.orangeColor()
+    }
 }
 

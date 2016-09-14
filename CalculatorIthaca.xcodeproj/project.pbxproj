@@ -14,6 +14,7 @@
 		EC66AC381D848C3100A361EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC66AC361D848C3100A361EF /* LaunchScreen.storyboard */; };
 		EC66AC431D848C3100A361EF /* CalculatorIthacaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC66AC421D848C3100A361EF /* CalculatorIthacaTests.swift */; };
 		EC66AC4E1D848C3100A361EF /* CalculatorIthacaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC66AC4D1D848C3100A361EF /* CalculatorIthacaUITests.swift */; };
+		EC7BD35D1D87B949004A8391 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BD35C1D87B949004A8391 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EC66AC491D848C3100A361EF /* CalculatorIthacaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorIthacaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC66AC4D1D848C3100A361EF /* CalculatorIthacaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorIthacaUITests.swift; sourceTree = "<group>"; };
 		EC66AC4F1D848C3100A361EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7BD35C1D87B949004A8391 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				EC66AC2D1D848C3100A361EF /* AppDelegate.swift */,
 				EC66AC2F1D848C3100A361EF /* ViewController.swift */,
+				EC7BD35C1D87B949004A8391 /* Stack.swift */,
 				EC66AC311D848C3100A361EF /* Main.storyboard */,
 				EC66AC341D848C3100A361EF /* Assets.xcassets */,
 				EC66AC361D848C3100A361EF /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC66AC301D848C3100A361EF /* ViewController.swift in Sources */,
+				EC7BD35D1D87B949004A8391 /* Stack.swift in Sources */,
 				EC66AC2E1D848C3100A361EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +495,7 @@
 				EC66AC541D848C3100A361EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC66AC551D848C3100A361EF /* Build configuration list for PBXNativeTarget "CalculatorIthacaTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +504,7 @@
 				EC66AC571D848C3100A361EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC66AC581D848C3100A361EF /* Build configuration list for PBXNativeTarget "CalculatorIthacaUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +513,7 @@
 				EC66AC5A1D848C3100A361EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
