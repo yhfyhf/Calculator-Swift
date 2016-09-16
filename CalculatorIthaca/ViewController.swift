@@ -87,6 +87,12 @@ class ViewController: UIViewController {
             curOperator = opr
             lastNum = numberDisplayValue
             equalButtonJustPressed = false
+        case "%":
+            stack.push(numberDisplayValue * 0.01)
+            displayResult()
+            curOperator = opr
+            lastNum = numberDisplayValue
+            equalButtonJustPressed = false
         default:
             if curOperator != "" && !equalButtonJustPressed {
                 let res = getCalculationResult(stack.pop(), num2: numberDisplayValue, opr: curOperator)
@@ -140,8 +146,6 @@ class ViewController: UIViewController {
             return num1 * num2
         case "÷":
             return num1 / num2
-        case "%":
-            return num1 % num2
         default:   // no operator is set, just return the current display value
             return num2
         }
